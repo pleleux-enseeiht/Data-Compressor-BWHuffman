@@ -17,7 +17,23 @@ output: textfile.decoded
 |huffman encoding         |    n²*m   |      n*m    |
 
 ##Tests
-tests
+####tests/test0
+Burrows-Wheeler transformation: 0.09732985496s
+Move to Front encoding:         0.00067496299s
+Huffman encoding:               0.00954318046s
+Compression rate achieved:      -19%
+
+####tests/test1
+Burrows-Wheeler transformation: 0.43533205986s
+Move to Front encoding:         0.00101804733s
+Huffman encoding:               0.01609086990s
+Compression rate achieved:      33%
+
+####tests/test2
+Burrows-Wheeler transformation: 23.2352020741s
+Move to Front encoding:         0.00592803955s
+Huffman encoding:               0.14135503768s
+Compression rate achieved:      68%
 
 ##Principle
 To encode/decode data, there are three steps:
